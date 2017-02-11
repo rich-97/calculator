@@ -1,0 +1,68 @@
+.calculator {
+  @include bgc($body-color);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+
+  .screen {
+    @include bgc($screen-color);
+    @include overflow-x;
+    color: $white;
+    font-size: 1.3em;
+    height: 5%;
+    letter-spacing: 2px;
+    padding: {
+      bottom: 5px;
+      left: 15px;
+      right: 15px;
+      top: 5px;
+    }
+    text-shadow: 1px 1px .5px $screen-color;
+    width: 100%;
+
+  }
+}
+
+.input {
+  border-radius: 5px 5px 0 0;
+  text-align: left;
+}
+
+.output {
+  border-radius: 0 0 5px 5px;
+  text-align: right;
+}
+
+.col {
+  @include bgc($btn-color3);
+  @include trans(box-shadow .2s ease);
+  border-radius: 2.5px;
+  box-shadow: 1px 1px 2px $black;
+  color: $white;
+  font-size: 1.2rem;
+  height: 7.5%;
+  line-height: 170%;
+  margin: 5px 3.5px;
+  text-align: center;
+  text-shadow: 1px 1px .5px $black;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 $black;
+  }
+}
+
+.operator { @include bgc($btn-color10); }
+
+.clear,
+.del {
+  @include bgc($btn-color4);
+}
+
+.number {
+  @include bgc($gray);
+  color: $btn-color8;
+}

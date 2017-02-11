@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include bgc($gray);
+  font-family: $font;
+}
+
+.container {
+  @include media (xs) {
+    @include center-block(80, 30);
+  }
+
+  @include media (sm) {
+    @include center-block(40, 30);
+  }
+
+  @include media (md) {
+    @include center-block(37, 30);
+  }
+
+  @include media(lg) {
+    @include center-block(35, 30);
+  }
+}
+
+.row {
+  @include display-flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.col {
+  display: inline-block;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.about {
+  margin: 30px auto;
+
+  span {
+    @include border(1, darken($white, 10));
+    @include trans;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 48.89%;
+
+    a {
+      @include unstyled-link;
+    }
+
+    &:hover {
+      @include bgc($black);
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

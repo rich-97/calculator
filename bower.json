@@ -1,0 +1,21 @@
+{
+  "name": "calculator",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "rich <morenoricardo237@outlook.es>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mixins.scss": "*",
+    "normalize-scss": "normalize.scss#^6.0.0"
+  }
+}
