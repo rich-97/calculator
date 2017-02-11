@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #ccc;
+  font-family: "PT mono"; }
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 30px auto;
+    width: 80%; } }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    margin: 30px auto;
+    width: 40%; } }
+
+@media screen and (min-width: 1023px) and (max-width: 1360px) {
+  .container {
+    margin: 30px auto;
+    width: 37%; } }
+
+@media screen and (min-width: 1360px) {
+  .container {
+    margin: 30px auto;
+    width: 35%; } }
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 100%; }
+
+.col {
+  display: inline-block;
+  width: 100%; }
+
+h1 {
+  text-align: center; }
+
+footer {
+  margin: 30px auto;
+  text-align: center; }
+
+.about {
+  margin: 30px auto; }
+  .about span {
+    border-color: #e6e6e6;
+    border-style: solid;
+    border-width: 1px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 48.89%; }
+    .about span a {
+      color: #000;
+      text-decoration: none; }
+      .about span a:visited {
+        color: black; }
+      .about span a:hover {
+        color: ligthen(#000, 20); }
+    .about span:hover {
+      background-color: #000; }
+      .about span:hover a {
+        color: #fff; }
+
+.calculator {
+  background-color: #009688;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px; }
+  .calculator .screen {
+    background-color: #263238;
+    overflow-x: auto;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 1.3em;
+    height: 5%;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    text-shadow: 1px 1px 0.5px #263238;
+    width: 100%; }
+
+.input {
+  border-radius: 5px 5px 0 0;
+  text-align: left; }
+
+.output {
+  border-radius: 0 0 5px 5px;
+  text-align: right; }
+
+.col {
+  background-color: #34474f;
+  transition: box-shadow 0.2s ease;
+  border-radius: 2.5px;
+  box-shadow: 1px 1px 2px #000;
+  color: #fff;
+  font-size: 1.2rem;
+  height: 7.5%;
+  line-height: 170%;
+  margin: 5px 3.5px;
+  text-align: center;
+  text-shadow: 1px 1px 0.5px #000; }
+  .col:hover {
+    cursor: pointer; }
+  .col:active {
+    box-shadow: 0 0 0 #000; }
+
+.operator {
+  background-color: rgba(254, 82, 41, 0.8); }
+
+.clear,
+.del {
+  background-color: #fe5229; }
+
+.number {
+  background-color: #ccc;
+  color: #586370; }
